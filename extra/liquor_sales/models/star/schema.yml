@@ -17,3 +17,15 @@ models:
         tests:
           - unique
           - not_null
+      - name: pack
+        description: "The number of bottles in a pack" 
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 1
+              max_value: 160
+      - name: bottle_volume_ml
+        description: "The volume of the bottle in mililiters" 
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 378000   

@@ -1,0 +1,2 @@
+[32m2026-06-17 19:25:59 +0800[0m - dagster - [34mDEBUG[0m - daily_elt_pipeline - 8619cad1-b99f-4377-adbb-2d7d3a01721b - 157757 - LOGS_CAPTURED - Started capturing logs in process (pid: 157757).
+[32m2026-06-17 19:25:59 +0800[0m - dagster - [34mDEBUG[0m - daily_elt_pipeline - 8619cad1-b99f-4377-adbb-2d7d3a01721b - 157757 - dbt_staging_cleaning - STEP_START - Started execution of step "dbt_staging_cleaning".

@@ -1,0 +1,30 @@
+[0m10:45:49  Running with dbt=1.10.17
+[0m10:45:52  Registered adapter: bigquery=1.11.0
+[0m10:45:53  Found 72 models, 181 data tests, 9 sources, 973 macros
+[0m10:45:53  
+[0m10:45:53  Concurrency: 2 threads (target='dev')
+[0m10:45:53  
+[0m10:46:12  1 of 9 START sql view model Extracted_data.sc_category_translation ............. [RUN]
+[0m10:46:12  2 of 9 START sql view model Extracted_data.sc_customers ........................ [RUN]
+[0m10:46:13  1 of 9 OK created sql view model Extracted_data.sc_category_translation ........ [[32mCREATE VIEW (0 processed)[0m in 1.41s]
+[0m10:46:13  2 of 9 OK created sql view model Extracted_data.sc_customers ................... [[32mCREATE VIEW (0 processed)[0m in 1.41s]
+[0m10:46:13  3 of 9 START sql view model Extracted_data.sc_geolocation ...................... [RUN]
+[0m10:46:13  4 of 9 START sql view model Extracted_data.sc_order_items ...................... [RUN]
+[0m10:46:14  3 of 9 OK created sql view model Extracted_data.sc_geolocation ................. [[32mCREATE VIEW (0 processed)[0m in 1.34s]
+[0m10:46:14  5 of 9 START sql view model Extracted_data.sc_order_payments ................... [RUN]
+[0m10:46:14  4 of 9 OK created sql view model Extracted_data.sc_order_items ................. [[32mCREATE VIEW (0 processed)[0m in 1.37s]
+[0m10:46:14  6 of 9 START sql view model Extracted_data.sc_order_reviews .................... [RUN]
+[0m10:46:16  5 of 9 OK created sql view model Extracted_data.sc_order_payments .............. [[32mCREATE VIEW (0 processed)[0m in 1.25s]
+[0m10:46:16  7 of 9 START sql view model Extracted_data.sc_orders ........................... [RUN]
+[0m10:46:16  6 of 9 OK created sql view model Extracted_data.sc_order_reviews ............... [[32mCREATE VIEW (0 processed)[0m in 1.89s]
+[0m10:46:16  8 of 9 START sql view model Extracted_data.sc_products ......................... [RUN]
+[0m10:46:17  7 of 9 OK created sql view model Extracted_data.sc_orders ...................... [[32mCREATE VIEW (0 processed)[0m in 1.18s]
+[0m10:46:17  9 of 9 START sql view model Extracted_data.sc_sellers .......................... [RUN]
+[0m10:46:17  8 of 9 OK created sql view model Extracted_data.sc_products .................... [[32mCREATE VIEW (0 processed)[0m in 1.14s]
+[0m10:46:18  9 of 9 OK created sql view model Extracted_data.sc_sellers ..................... [[32mCREATE VIEW (0 processed)[0m in 1.27s]
+[0m10:46:18  
+[0m10:46:18  Finished running 9 view models in 0 hours 0 minutes and 24.90 seconds (24.90s).
+[0m10:46:18  
+[0m10:46:18  [32mCompleted successfully[0m
+[0m10:46:18  
+[0m10:46:18  Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=9

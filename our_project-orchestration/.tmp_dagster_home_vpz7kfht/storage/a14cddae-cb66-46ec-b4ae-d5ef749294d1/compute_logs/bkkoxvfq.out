@@ -1,0 +1,60 @@
+[0m10:44:57  Running with dbt=1.10.17
+[0m10:45:00  Registered adapter: bigquery=1.11.0
+[0m10:45:00  Found 72 models, 181 data tests, 9 sources, 973 macros
+[0m10:45:00  
+[0m10:45:00  Concurrency: 2 threads (target='dev')
+[0m10:45:00  
+[0m10:45:22  1 of 24 START sql view model Extracted_data.dp_category_translation_completeness  [RUN]
+[0m10:45:22  2 of 24 START sql view model Extracted_data.dp_customers_completeness .......... [RUN]
+[0m10:45:24  1 of 24 OK created sql view model Extracted_data.dp_category_translation_completeness  [[32mCREATE VIEW (0 processed)[0m in 1.47s]
+[0m10:45:24  3 of 24 START sql view model Extracted_data.dp_customers_duplicates ............ [RUN]
+[0m10:45:24  2 of 24 OK created sql view model Extracted_data.dp_customers_completeness ..... [[32mCREATE VIEW (0 processed)[0m in 1.77s]
+[0m10:45:24  4 of 24 START sql view model Extracted_data.dp_geolocation_completeness ........ [RUN]
+[0m10:45:25  3 of 24 OK created sql view model Extracted_data.dp_customers_duplicates ....... [[32mCREATE VIEW (0 processed)[0m in 1.26s]
+[0m10:45:25  5 of 24 START sql view model Extracted_data.dp_geolocation_statistics .......... [RUN]
+[0m10:45:25  4 of 24 OK created sql view model Extracted_data.dp_geolocation_completeness ... [[32mCREATE VIEW (0 processed)[0m in 1.26s]
+[0m10:45:26  6 of 24 START sql view model Extracted_data.dp_order_items_completeness ........ [RUN]
+[0m10:45:26  5 of 24 OK created sql view model Extracted_data.dp_geolocation_statistics ..... [[32mCREATE VIEW (0 processed)[0m in 1.10s]
+[0m10:45:26  7 of 24 START sql view model Extracted_data.dp_order_items_relationships ....... [RUN]
+[0m10:45:27  6 of 24 OK created sql view model Extracted_data.dp_order_items_completeness ... [[32mCREATE VIEW (0 processed)[0m in 1.19s]
+[0m10:45:27  8 of 24 START sql view model Extracted_data.dp_order_items_statistics .......... [RUN]
+[0m10:45:28  7 of 24 OK created sql view model Extracted_data.dp_order_items_relationships .. [[32mCREATE VIEW (0 processed)[0m in 1.26s]
+[0m10:45:28  9 of 24 START sql view model Extracted_data.dp_order_payments_completeness ..... [RUN]
+[0m10:45:28  8 of 24 OK created sql view model Extracted_data.dp_order_items_statistics ..... [[32mCREATE VIEW (0 processed)[0m in 1.28s]
+[0m10:45:28  10 of 24 START sql view model Extracted_data.dp_order_payments_distribution .... [RUN]
+[0m10:45:29  9 of 24 OK created sql view model Extracted_data.dp_order_payments_completeness  [[32mCREATE VIEW (0 processed)[0m in 1.06s]
+[0m10:45:29  11 of 24 START sql view model Extracted_data.dp_order_payments_statistics ...... [RUN]
+[0m10:45:29  10 of 24 OK created sql view model Extracted_data.dp_order_payments_distribution  [[32mCREATE VIEW (0 processed)[0m in 1.18s]
+[0m10:45:29  12 of 24 START sql view model Extracted_data.dp_order_reviews_completeness ..... [RUN]
+[0m10:45:30  11 of 24 OK created sql view model Extracted_data.dp_order_payments_statistics . [[32mCREATE VIEW (0 processed)[0m in 1.09s]
+[0m10:45:30  13 of 24 START sql view model Extracted_data.dp_order_reviews_distribution ..... [RUN]
+[0m10:45:31  12 of 24 OK created sql view model Extracted_data.dp_order_reviews_completeness  [[32mCREATE VIEW (0 processed)[0m in 1.40s]
+[0m10:45:31  14 of 24 START sql view model Extracted_data.dp_orders_completenes ............. [RUN]
+[0m10:45:32  14 of 24 OK created sql view model Extracted_data.dp_orders_completenes ........ [[32mCREATE VIEW (0 processed)[0m in 1.15s]
+[0m10:45:32  15 of 24 START sql view model Extracted_data.dp_orders_date_statistics ......... [RUN]
+[0m10:45:32  13 of 24 OK created sql view model Extracted_data.dp_order_reviews_distribution  [[32mCREATE VIEW (0 processed)[0m in 2.08s]
+[0m10:45:32  16 of 24 START sql view model Extracted_data.dp_orders_duplicates .............. [RUN]
+[0m10:45:33  15 of 24 OK created sql view model Extracted_data.dp_orders_date_statistics .... [[32mCREATE VIEW (0 processed)[0m in 1.16s]
+[0m10:45:33  17 of 24 START sql view model Extracted_data.dp_orders_relationships ........... [RUN]
+[0m10:45:33  16 of 24 OK created sql view model Extracted_data.dp_orders_duplicates ......... [[32mCREATE VIEW (0 processed)[0m in 1.09s]
+[0m10:45:33  18 of 24 START sql view model Extracted_data.dp_orders_status_distribution ..... [RUN]
+[0m10:45:34  17 of 24 OK created sql view model Extracted_data.dp_orders_relationships ...... [[32mCREATE VIEW (0 processed)[0m in 1.21s]
+[0m10:45:34  19 of 24 START sql view model Extracted_data.dp_products_category_distribution . [RUN]
+[0m10:45:34  18 of 24 OK created sql view model Extracted_data.dp_orders_status_distribution  [[32mCREATE VIEW (0 processed)[0m in 1.21s]
+[0m10:45:34  20 of 24 START sql view model Extracted_data.dp_products_completeness .......... [RUN]
+[0m10:45:35  19 of 24 OK created sql view model Extracted_data.dp_products_category_distribution  [[32mCREATE VIEW (0 processed)[0m in 1.06s]
+[0m10:45:35  21 of 24 START sql view model Extracted_data.dp_products_duplicates ............ [RUN]
+[0m10:45:35  20 of 24 OK created sql view model Extracted_data.dp_products_completeness ..... [[32mCREATE VIEW (0 processed)[0m in 1.20s]
+[0m10:45:35  22 of 24 START sql view model Extracted_data.dp_products_statistics ............ [RUN]
+[0m10:45:36  21 of 24 OK created sql view model Extracted_data.dp_products_duplicates ....... [[32mCREATE VIEW (0 processed)[0m in 1.10s]
+[0m10:45:36  23 of 24 START sql view model Extracted_data.dp_sellers_completeness ........... [RUN]
+[0m10:45:36  22 of 24 OK created sql view model Extracted_data.dp_products_statistics ....... [[32mCREATE VIEW (0 processed)[0m in 1.04s]
+[0m10:45:36  24 of 24 START sql view model Extracted_data.dp_sellers_duplicates ............. [RUN]
+[0m10:45:40  24 of 24 OK created sql view model Extracted_data.dp_sellers_duplicates ........ [[32mCREATE VIEW (0 processed)[0m in 1.11s]
+[0m10:45:40  23 of 24 OK created sql view model Extracted_data.dp_sellers_completeness ...... [[32mCREATE VIEW (0 processed)[0m in 1.03s]
+[0m10:45:40  
+[0m10:45:40  Finished running 24 view models in 0 hours 0 minutes and 39.75 seconds (39.75s).
+[0m10:45:40  
+[0m10:45:40  [32mCompleted successfully[0m
+[0m10:45:40  
+[0m10:45:40  Done. PASS=24 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=24

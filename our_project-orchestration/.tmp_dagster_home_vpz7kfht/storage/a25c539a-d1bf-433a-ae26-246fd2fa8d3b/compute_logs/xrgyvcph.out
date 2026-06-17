@@ -1,0 +1,52 @@
+[0m11:13:45  Running with dbt=1.10.17
+[0m11:13:47  Registered adapter: bigquery=1.11.0
+[0m11:13:48  Found 72 models, 181 data tests, 9 sources, 973 macros
+[0m11:13:48  
+[0m11:13:48  Concurrency: 2 threads (target='dev')
+[0m11:13:48  
+[0m11:14:17  1 of 20 START sql table model Extracted_data.dim1_customers .................... [RUN]
+[0m11:14:17  2 of 20 START sql table model Extracted_data.dim1_dates ........................ [RUN]
+[0m11:14:21  1 of 20 OK created sql table model Extracted_data.dim1_customers ............... [[32mCREATE TABLE (99.4k rows, 8.8 MiB processed)[0m in 3.95s]
+[0m11:14:21  3 of 20 START sql table model Extracted_data.dim1_products ..................... [RUN]
+[0m11:14:22  2 of 20 OK created sql table model Extracted_data.dim1_dates ................... [[32mCREATE TABLE (634.0 rows, 4.0 MiB processed)[0m in 4.25s]
+[0m11:14:22  4 of 20 START sql table model Extracted_data.dim1_sellers ...................... [RUN]
+[0m11:14:26  4 of 20 OK created sql table model Extracted_data.dim1_sellers ................. [[32mCREATE TABLE (3.1k rows, 175.8 KiB processed)[0m in 4.09s]
+[0m11:14:26  5 of 20 START sql table model Extracted_data.fact_order1_items ................. [RUN]
+[0m11:14:26  3 of 20 OK created sql table model Extracted_data.dim1_products ................ [[32mCREATE TABLE (33.0k rows, 2.6 MiB processed)[0m in 4.55s]
+[0m11:14:26  6 of 20 START sql table model Extracted_data.fact_orders1 ...................... [RUN]
+[0m11:14:31  5 of 20 OK created sql table model Extracted_data.fact_order1_items ............ [[32mCREATE TABLE (112.7k rows, 21.8 MiB processed)[0m in 4.68s]
+[0m11:14:31  7 of 20 START test not_null_dim1_customers_customer_id ......................... [RUN]
+[0m11:14:31  6 of 20 OK created sql table model Extracted_data.fact_orders1 ................. [[32mCREATE TABLE (99.4k rows, 26.6 MiB processed)[0m in 5.33s]
+[0m11:14:31  8 of 20 START test unique_dim1_customers_customer_id ........................... [RUN]
+[0m11:14:32  7 of 20 PASS not_null_dim1_customers_customer_id ............................... [[32mPASS[0m in 1.68s]
+[0m11:14:32  9 of 20 START test not_null_dim1_dates_date_day ................................ [RUN]
+[0m11:14:33  8 of 20 PASS unique_dim1_customers_customer_id ................................. [[32mPASS[0m in 1.69s]
+[0m11:14:33  10 of 20 START test unique_dim1_dates_date_day ................................. [RUN]
+[0m11:14:34  9 of 20 PASS not_null_dim1_dates_date_day ...................................... [[32mPASS[0m in 1.60s]
+[0m11:14:34  11 of 20 START test not_null_dim1_sellers_seller_id ............................ [RUN]
+[0m11:14:35  10 of 20 PASS unique_dim1_dates_date_day ....................................... [[32mPASS[0m in 1.80s]
+[0m11:14:35  12 of 20 START test unique_dim1_sellers_seller_id .............................. [RUN]
+[0m11:14:36  11 of 20 PASS not_null_dim1_sellers_seller_id .................................. [[32mPASS[0m in 1.84s]
+[0m11:14:36  13 of 20 START test not_null_dim1_products_product_id .......................... [RUN]
+[0m11:14:37  12 of 20 PASS unique_dim1_sellers_seller_id .................................... [[32mPASS[0m in 1.73s]
+[0m11:14:37  14 of 20 START test unique_dim1_products_product_id ............................ [RUN]
+[0m11:14:38  13 of 20 PASS not_null_dim1_products_product_id ................................ [[32mPASS[0m in 1.87s]
+[0m11:14:38  15 of 20 START test relationships_fact_order1_items_product_id__product_id__ref_dim1_products_  [RUN]
+[0m11:14:38  14 of 20 PASS unique_dim1_products_product_id .................................. [[32mPASS[0m in 1.93s]
+[0m11:14:38  16 of 20 START test relationships_fact_order1_items_seller_id__seller_id__ref_dim1_sellers_  [RUN]
+[0m11:14:39  15 of 20 PASS relationships_fact_order1_items_product_id__product_id__ref_dim1_products_  [[32mPASS[0m in 1.82s]
+[0m11:14:39  17 of 20 START test not_null_fact_orders1_order_id ............................. [RUN]
+[0m11:14:40  16 of 20 PASS relationships_fact_order1_items_seller_id__seller_id__ref_dim1_sellers_  [[32mPASS[0m in 1.72s]
+[0m11:14:40  18 of 20 START test relationships_fact_order1_items_order_id__order_id__ref_fact_orders1_  [RUN]
+[0m11:14:41  17 of 20 PASS not_null_fact_orders1_order_id ................................... [[32mPASS[0m in 1.61s]
+[0m11:14:41  19 of 20 START test relationships_fact_orders1_customer_id__customer_id__ref_dim1_customers_  [RUN]
+[0m11:14:42  18 of 20 PASS relationships_fact_order1_items_order_id__order_id__ref_fact_orders1_  [[32mPASS[0m in 1.77s]
+[0m11:14:42  20 of 20 START test unique_fact_orders1_order_id ............................... [RUN]
+[0m11:14:43  19 of 20 PASS relationships_fact_orders1_customer_id__customer_id__ref_dim1_customers_  [[32mPASS[0m in 1.66s]
+[0m11:14:45  20 of 20 PASS unique_fact_orders1_order_id ..................................... [[32mPASS[0m in 2.68s]
+[0m11:14:45  
+[0m11:14:45  Finished running 6 table models, 14 data tests in 0 hours 0 minutes and 56.76 seconds (56.76s).
+[0m11:14:45  
+[0m11:14:45  [32mCompleted successfully[0m
+[0m11:14:45  
+[0m11:14:45  Done. PASS=20 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=20
